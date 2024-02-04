@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/styles">
+        <file>home_alarm_style.qss</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,88 @@
+QMainWindow, QDialog {
+    background-color: #424242;
+}
+
+QPushButton {
+
+}
+
+QPushButton::pressed, QPushButton:checked {
+    background-color: #5375E6;
+}
+
+QPushButton[objectName*="add"], QPushButton[objectName*="save"], QPushButton[objectName*="calc"], QPushButton[objectName*="select"] {
+    background-color: #5375E6;
+}
+
+QPushButton[objectName*="cancel"], QPushButton[objectName*="remove"] {
+    background-color: #991F3B;
+}
+
+QPushButton[objectName*="edit"] {
+    background-color: #64805C;
+}
+
+QLineEdit, QPlainTextEdit, QSpinBox, QDoubleSpinBox, QDateEdit {
+    border: 1px solid #5C6480;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 1px;
+}
+
+QLineEdit:focus, QPlainTextEdit:focus, QSpinBox:focus, QDoubleSpinBox:focus, QDateEdit:focus {
+    border-color: #5375E6;
+    border-width: 3px;
+}
+
+#frame_menu_buttons {
+    border: 3px solid #5375E6;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#frame {
+    border: 3px solid #5C6480;
+}
+
+QHeaderView {
+    background-color: #5375E6;
+}
+
+QAbstractItemView::item:selected {
+    background-color: #5375E6;
+}
+
+QSpinBox::up-button,
+QSpinBox::down-button,
+QDoubleSpinBox::up-button,
+QDoubleSpinBox::down-button,
+QDateEdit::up-button,
+QDateEdit::down-button {
+    width: 15px; /* Замените на нужную ширину кнопок */
+    height: 9px; /* Замените на нужную высоту кнопок */
+}
+
+QSpinBox::up-button,
+QDoubleSpinBox::up-button,
+QDateEdit::up-button {
+    subcontrol-origin: padding;
+    subcontrol-position: top right; /* Расположение кнопки увеличения */
+}
+
+QSpinBox::down-button,
+QDoubleSpinBox::down-button,
+QDateEdit::down-button {
+    subcontrol-origin: padding;
+    subcontrol-position: bottom right; /* Расположение кнопки уменьшения */
+}
+
+QSpinBox::up-button:hover,
+QSpinBox::down-button:hover,
+QDoubleSpinBox::up-button:hover,
+QDoubleSpinBox::down-button:hover,
+QDateEdit::up-button:hover,
+QDateEdit::down-button:hover {
+    background-color: #e0e0e0; /* Цвет фона при наведении */
+}
